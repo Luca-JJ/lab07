@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="it.unibo.nestedenum.TestMonthSorter" tests="2" skipped="0" failures="1" errors="0" timestamp="2025-11-08T09:28:01.239Z" hostname="DESKTOP-FVKPF5M" time="0.13">
+  <properties/>
+  <testcase name="testAmbiguousAndIllegalName()" classname="it.unibo.nestedenum.TestMonthSorter" time="0.073"/>
+  <testcase name="testSorting()" classname="it.unibo.nestedenum.TestMonthSorter" time="0.054">
+    <failure message="java.lang.IllegalArgumentException: month non found" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: month non found
+	at it.unibo.nestedenum.MonthSorterNested$Month.fromString(MonthSorterNested.java:39)
+	at it.unibo.nestedenum.MonthSorterNested$2.compare(MonthSorterNested.java:64)
+	at it.unibo.nestedenum.MonthSorterNested$2.compare(MonthSorterNested.java:60)
+	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
+	at java.base/java.util.TimSort.sort(TimSort.java:220)
+	at java.base/java.util.Arrays.sort(Arrays.java:1308)
+	at java.base/java.util.ArrayList.sort(ArrayList.java:1804)
+	at it.unibo.nestedenum.TestMonthSorter.testSorting(TestMonthSorter.java:120)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
